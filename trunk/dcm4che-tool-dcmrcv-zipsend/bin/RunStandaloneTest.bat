@@ -1,0 +1,1 @@
+java -jar dcmrcv.jar STORESCP:104 -dest D://UltrasoundData -zipsend=on -emailfrom=ultrasound-dicom@mydomain.com -emailto=ultrasound-dicom@mydomain.com -emailsmtpserver=mail.mydomain.com -emailuser=ultrasound-dicom+mydomain.com -emailpassword=mypassword -ziptimeout=10000
