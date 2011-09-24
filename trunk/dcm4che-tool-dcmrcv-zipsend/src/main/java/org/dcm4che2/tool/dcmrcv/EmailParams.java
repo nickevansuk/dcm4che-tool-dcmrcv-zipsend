@@ -65,7 +65,7 @@ public class EmailParams {
 	
 
 	public EmailParams(String patientID, String patientName, String dateOfBirth, String seriesDate, String seriesTime) {
-		this.patientHospitalNumber = patientID;
+		setPatientHospitalNumber(patientID);
 		
 		//Parse patient name
 		if (patientName != null) {
@@ -77,8 +77,8 @@ public class EmailParams {
 			
 			//Split the forename and surname
 			String[] names = patientName.split(splitChar, 2);
-			this.patientSurname = names[0];
-			if (names.length > 1) this.patientForename = names[1];
+			setPatientSurname(names[0]);
+			if (names.length > 1) setPatientForename(names[1]);
 		}
 		
 		//Parse patient date of birth
@@ -141,11 +141,23 @@ public class EmailParams {
 	public Date getSeriesDateTime() { return seriesDateTime; }
 		
 	//Getters and setters for parameters
-	public void setPatientHospitalNumber(String patientHospitalNumber) { this.patientHospitalNumber = patientHospitalNumber; }
+	public void setPatientHospitalNumber(String patientHospitalNumber) {
+		if (patientHospitalNumber != null) {
+			this.patientHospitalNumber = patientHospitalNumber.trim();
+		}
+	}
 	public String getPatientHospitalNumber() { return patientHospitalNumber; }
-	public void setPatientSurname(String patientSurname) { this.patientSurname = patientSurname; }
+	public void setPatientSurname(String patientSurname) {
+		if (patientSurname != null) {
+			this.patientSurname = patientSurname.trim();
+		}
+	}
 	public String getPatientSurname() { return patientSurname; }
-	public void setPatientForename(String patientForename) { this.patientForename = patientForename; }
+	public void setPatientForename(String patientForename) { 
+		if (patientForename != null) {
+			this.patientForename = patientForename.trim(); 
+		}
+	}
 	public String getPatientForename() { return patientForename; }
 	public void setConsultantCode(String consultantCode) { 
 		if (consultantCode != null)
