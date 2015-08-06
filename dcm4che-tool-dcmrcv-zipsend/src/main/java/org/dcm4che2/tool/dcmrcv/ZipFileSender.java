@@ -15,12 +15,12 @@
  * Java(TM), hosted at http://sourceforge.net/projects/dcm4che.
  *
  * The Initial Developer of the Original Code is
- * Nick Evans (http://www.nickevans.me.uk), Cardiff. UK/Europe.
+ * Nick Evans (http://www.nickevans.me), Cardiff. UK/Europe.
  * Portions created by the Initial Developer are Copyright (C) 2002-2005
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- * Nick Evans (http://www.nickevans.me.uk)
+ * Nick Evans (http://www.nickevans.me)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -69,7 +69,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author Nick Evans (http://www.nickevans.me.uk)
+ * @author Nick Evans (http://www.nickevans.me)
  * @version $Revision: 1 $ $Date: 2011-09-11 12:57:21 +0000 (Sun, 11 Sept 2011) $
  * @since Sept 11, 2011
  */
